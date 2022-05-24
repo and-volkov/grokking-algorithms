@@ -19,10 +19,5 @@ def arr_max(arr):
     """Максимальное значение в списке."""
     if len(arr) == 2:
         return arr[0] if arr[0] > arr[1] else arr[1]
-    sub_max = max(arr[1:])
+    sub_max = arr_max(arr[1:])
     return arr[0] if arr[0] > sub_max else sub_max
-
-
-arr1 = [6, 2, 3, 4, 5]
-
-print(arr_max(arr1))
