@@ -16,6 +16,7 @@ def arr_count(arr):
 
 
 def arr_max(arr):
+    """Максимальное значение в списке."""
     if len(arr) == 2:
         return arr[0] if arr[0] > arr[1] else arr[1]
     sub_max = max(arr[1:])
